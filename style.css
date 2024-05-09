@@ -1,0 +1,284 @@
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items:center;
+    background-color: black;
+}
+
+.container {
+    border: 2px solid orangered;
+    background-color: white;
+    width: 370px;
+    height: 650px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    z-index: 1;
+    position: relative;
+}
+
+.alert {
+    font-family: 'Times New Roman', Times, serif;
+    width: 190px;
+    height: 28px;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 8px;
+    z-index: 2;
+    position: relative;
+    margin-top: -120px;
+    margin-left: -15px;
+}
+
+.calculator-screen {
+    box-shadow: 1px 1px 10px 1px rgb(248, 244, 244);
+    border-radius: 7px;
+    width: 83%;
+    height: 620px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content:space-around;
+}
+
+.calculator-header {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items:center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: rgb(138, 135, 135);
+}
+
+.fa-calculator {
+    margin-top: 3px;
+}
+
+.fa-adjust {
+    cursor: pointer;
+}
+
+.display-screen {
+    border-bottom: 1px solid rgb(238, 235, 235);
+    height: 175px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.display {
+    border:none;
+    height: 135px;
+    width: 285px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 27px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction:column-reverse;
+    text-align:right;
+    word-wrap: break-word;
+    
+}
+
+.material-icons {
+    text-align: end;
+    margin-left: 245px;
+    margin-top: 5px;    
+    color: rgba(255, 68, 0, 0.692);
+    cursor: pointer;
+}
+
+hr {
+    width: 30%;
+    border: 1px solid rgb(238, 235, 235);
+    margin: 0ch;
+    margin-left: 107px;
+    border: 2px solid orangered;  
+}
+
+.button-screen {
+    /* border: 1px solid saddlebrown; */
+    height: 364px;
+    width: 80%;
+    margin-left: 15px;
+    margin-top: 20px;
+    
+    display: grid;
+    grid-template: 60px 60px 60px 60px 60px 60px/ 60px 60px 60px 60px ;
+    grid-template-areas:
+    "A B C D"
+    "E F G H"
+    "I J K L"
+    "M N O P"
+    "R S T U";
+    grid-gap: 14px 14px;
+}
+
+.operator {
+    border-radius: 30px;
+    border: 0px;
+    box-shadow: 1px 1px 4px rgb(155, 151, 151);
+    background-color: rgb(247, 247, 247);
+    font-size: 23px;
+    font-weight: bold;
+    color: orangered;
+
+}
+
+.number {
+    border-radius: 30px;
+    border: 0px;
+    box-shadow: 1px 1px 4px rgb(155, 151, 151);
+    background-color: rgb(247, 247, 247);
+    font-size: 20px;
+}
+
+#clear {
+    grid-area: A;
+    color: orangered;
+    cursor: pointer;
+}
+
+#division {
+    grid-area: B;
+    cursor: pointer;
+}
+
+#percent {
+    grid-area: C;
+    cursor: pointer;
+}
+
+#dot {
+    grid-area: P;
+    cursor: pointer;
+}
+
+#seven{
+    grid-area: E;
+    cursor: pointer;
+}
+
+#eight{
+    grid-area: F;
+    cursor: pointer;
+}
+
+#nine {
+    grid-area: G;
+    cursor: pointer;
+}
+
+#multiplication {
+    grid-area: D;
+    cursor: pointer;
+}
+
+#four {
+    grid-area: I;
+    cursor: pointer;
+}
+
+#five {
+    grid-area: J;
+    cursor: pointer;
+}
+
+#six {
+    grid-area: K;
+    cursor: pointer;
+}
+
+#subtraction {
+    grid-area: H;
+    cursor: pointer;
+}
+
+#one {
+    grid-area: M;
+    cursor: pointer;
+}
+
+#two {
+    grid-area: N;
+    cursor: pointer;
+}
+
+#three {
+    grid-area: O;
+    cursor: pointer;
+}
+
+#addition {
+    grid-area:L;
+    cursor: pointer;
+}
+
+#opening-parenthesis {
+    grid-area: R;
+    font-size: 23px;
+    font-weight:lighter;
+    cursor: pointer;
+}
+
+#zero {
+    grid-area: S;
+    cursor: pointer;
+}
+
+#closing-parenthesis {
+    grid-area: T;
+    font-size: 23px;
+    font-weight:lighter;
+    cursor: pointer;
+}
+
+#equal {
+    grid-area: U;
+    background-color: orangered;
+    color: white;
+    cursor: pointer;
+}
+
+.dark-container {
+    background-color: black;
+    border: 2px solid white;
+}
+
+.dark-calculator-screen {
+    background-color: black;
+    border: none;
+    box-shadow: 1px 1px 1px 2px rgb(8, 8, 8);
+}
+
+.dark-display-screen {
+    border-bottom: 1px solid rgb(8, 8, 8);
+    box-shadow: 1px 1px 1px 2px rgb(8, 8, 8);
+}
+
+.dark-numbers {
+    background-color: black;
+    color: white;
+    border: 0px;
+    box-shadow: 1px 1px 1px  rgb(15, 15, 15);
+}
+
+.dark-operators {
+    background-color: black;
+    color: orangered;
+    border: 0px;
+    box-shadow: 1px 1px 1px rgb(15, 15, 15);
+}
+
+.dark-calculator-header {
+    color: white;
+}
